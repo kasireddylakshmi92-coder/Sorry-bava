@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.message {
+  font-size: 18px;
+  color: white;
+  max-width: 500px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #ff5e78;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.heart {
+  position: absolute;
+  color: red;
+  font-size: 20px;
+  animation: float 4s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px);
+    opacity: 0;
+  }
+}
